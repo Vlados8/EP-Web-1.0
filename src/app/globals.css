@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), Inter, sans-serif;
+  --animate-spin-slow: spin 40s linear infinite;
+  --animate-pulse-slow: pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+:root {
+  --background: #020617;
+  --foreground: #f8fafc;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom cinematic radial vignette overlay */
+.bg-radial-vignette {
+  background: radial-gradient(
+    circle at center,
+    rgba(2, 6, 23, 0.1) 0%,
+    rgba(2, 6, 23, 0.5) 45%,
+    rgba(2, 6, 23, 0.9) 85%,
+    rgba(2, 6, 23, 1) 100%
+  );
+}
+
+/* Lenis smooth scrolling integration */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  scroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Premium micro-scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.15);
+  border-radius: 9999px;
+  border: 2px solid #020617;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.45);
+}
