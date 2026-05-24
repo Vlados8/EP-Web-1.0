@@ -20,7 +20,7 @@ export default function Footer() {
           <a href="#" className="flex items-center gap-3 group">
             <div className="relative flex items-center justify-center w-9 h-9 rounded-xl bg-slate-900/60 border border-white/10 p-1.5 shadow-[0_0_12px_rgba(16,185,129,0.15)] overflow-hidden transition-all duration-300 group-hover:border-emerald-500/30">
               <img 
-                src="/ep_logo_solid.png" 
+                src="/ep_logo_outline.png" 
                 alt="Empire Premium Logo" 
                 className="w-full h-full object-contain filter brightness-110 contrast-105 transition-transform duration-500 group-hover:scale-110"
               />
