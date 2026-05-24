@@ -17,9 +17,14 @@ export default function Footer() {
         
         {/* Column 1: Brand & Logo */}
         <div className="lg:col-span-2 space-y-6">
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="relative flex items-center justify-center w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 p-2 shadow-[0_0_12px_rgba(16,185,129,0.25)]">
-              <Zap className="w-4 h-4 text-slate-950 stroke-[2.5]" />
+          <a href="#" className="flex items-center gap-3 group">
+            <div className="relative flex items-center justify-center w-9 h-9 rounded-xl bg-slate-900/60 border border-white/10 p-1.5 shadow-[0_0_12px_rgba(16,185,129,0.15)] overflow-hidden transition-all duration-300 group-hover:border-emerald-500/30">
+              <img 
+                src="/ep_logo_solid.png" 
+                alt="Empire Premium Logo" 
+                className="w-full h-full object-contain filter brightness-110 contrast-105 transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-tr from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
             <span className="text-lg font-black text-white tracking-widest uppercase">
               Empire Premium<span className="text-emerald-400 font-extrabold">.</span>

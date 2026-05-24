@@ -92,10 +92,14 @@ export default function Navbar() {
         >
           <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
             {/* Logo Brand */}
-            <a href="/" className="flex items-center gap-2 group z-50">
-              <div className="relative flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 p-2 shadow-[0_0_15px_rgba(16,185,129,0.3)]">
-                <Zap className="w-5 h-5 text-slate-950 stroke-[2.5]" />
-                <div className="absolute inset-0 rounded-xl bg-emerald-400 blur-md opacity-0 group-hover:opacity-40 transition-opacity duration-500" />
+            <a href="/" className="flex items-center gap-3 group z-50">
+              <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/60 border border-white/10 p-1.5 shadow-[0_0_15px_rgba(16,185,129,0.15)] overflow-hidden transition-all duration-300 group-hover:border-emerald-500/30 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.25)]">
+                <img 
+                  src="/ep_logo_solid.png" 
+                  alt="Empire Premium Logo" 
+                  className="w-full h-full object-contain filter brightness-110 contrast-105 transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-tr from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
               <span className="text-xl font-black text-white tracking-widest uppercase">
                 Empire Premium<span className="text-emerald-400 animate-pulse font-extrabold">.</span>
